@@ -67,7 +67,7 @@ or lose precision if the frame rate is too high or too low.
 
     public partial class PhysicsScript : CharacterBody2D
     {
-        public override void _PhysicsProcess(float delta)
+        public override void _PhysicsProcess(double delta)
         {
         }
     }
@@ -130,7 +130,7 @@ So, let's move our sprite downwards until it hits the floor:
 
     public partial class PhysicsScript : CharacterBody2D
     {
-        public override void _PhysicsProcess(float delta)
+        public override void _PhysicsProcess(double delta)
         {
             // Move down 1 pixel per physics frame
             MoveAndCollide(new Vector2(0, 1));
