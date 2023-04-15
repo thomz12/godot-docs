@@ -378,7 +378,7 @@ occurred:
     {
         private Vector2 _velocity = new Vector2(250, 250);
 
-        public override void _PhysicsProcess(float delta)
+        public override void _PhysicsProcess(double delta)
         {
             var collisionInfo = MoveAndCollide(_velocity * delta);
             if (collisionInfo != null)
